@@ -2,7 +2,7 @@
 
 ## How to use?
 ```
-git clone https://github.com/hdev1004/School-Lecture.git
+git clone https://github.com/hdev1004/Desktop_Animated_Control.git
 ```
 
 
