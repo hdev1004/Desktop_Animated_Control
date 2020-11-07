@@ -1,4 +1,4 @@
-# School-Lecture
+# Desktop Animated Control
 
 ## How to use?
 ```
