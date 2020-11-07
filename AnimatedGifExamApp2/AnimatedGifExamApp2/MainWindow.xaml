@@ -1,0 +1,30 @@
+﻿<Window x:Class="AnimatedGifExamApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnimatedGifExamApp2"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" AllowsTransparency="True" Background="Transparent" WindowStyle="None" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged" KeyDown="Window_KeyDown" Icon="선진.png" Closed="Window_Closed">
+    <Grid>
+        <Image
+            x:Name="gif1"
+            gif:ImageBehavior.RepeatBehavior="Forever"
+            >
+            
+            <Image.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="gif_loop" Header="반복" Click="gif_loop_Click"/>
+                    <MenuItem x:Name="gif_filp" Header="반전" Click="gif_filp_Click"/>
+                    <MenuItem x:Name="gif_top" Header="항상 화면 위" Click="gif_top_Click" IsChecked="True" IsCheckable="True" />
+                    <MenuItem x:Name="gif_radio" Header="비율" Click="gif_radio_Click" />
+                    <MenuItem x:Name="gif_boot" Header="부팅 시 실행" Click="gif_boot_Click" />
+                    <MenuItem Header="종료" Click="MenuItem_Click"/>
+                </ContextMenu>
+            </Image.ContextMenu>
+
+        </Image>
+        <Border CornerRadius="10" x:Name="border1" BorderBrush="SkyBlue" BorderThickness="2" Visibility="Hidden"/>
+    </Grid>
+</Window>
